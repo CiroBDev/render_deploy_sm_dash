@@ -24,7 +24,7 @@ app.layout = html.Div(children=[
         # Coluna Esquerda
         dbc.Col([
             dbc.Card([
-                html.H3("ASIMOV", style={"font-family": "Voltaire", "font-size": "3vw"}),
+                html.H3("CIRODEV", style={"font-family": "Voltaire", "font-size": "3vw"}),
                 html.Hr(),
                 html.H5('Cidades: ', style={"font-weight": "bold", "font-size": "1vw"}),
                 dcc.Checklist(df_data['City'].value_counts().index,
