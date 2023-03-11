@@ -11,9 +11,8 @@ from dash_bootstrap_templates import load_figure_template
 
 load_figure_template("minty")
 
-app = Dash(
-    external_stylesheets=[dbc.themes.MINTY]
-)
+app = Dash(__name__, external_stylesheets=[dbc.themes.MINTY])
+server = app.server
 
 df_data = pd.read_csv('supermarket_sales.csv')
 df_data['Date'] = pd.to_datetime(df_data['Date'])
